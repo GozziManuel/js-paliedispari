@@ -2,6 +2,10 @@
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 let userChoice = prompt("scegli pari o dispari");
 let userChoice2 = prompt("scegli un numero da 1 a 5");
+if (userChoice !== "pari" || userChoice !== "dispari") {
+  alert("stringa non valida scegli tra pari o dispari");
+}
+
 console.log(userChoice);
 console.log(userChoice2);
 const evenOrOdd = evenChoice(userChoice);
