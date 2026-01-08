@@ -40,4 +40,12 @@ function sumEvenOrOdd(sum) {
 }
 const finalResult = sumEvenOrOdd(sumNumber);
 console.log(finalResult);
+
 // Dichiariamo chi ha vinto.
+function winner(sum, choice) {
+  if (sum === choice) console.log("player won");
+  else {
+    console.log("pc won");
+  }
+}
+const realWinner = winner(finalResult, evenOrOdd);
