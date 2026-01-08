@@ -12,9 +12,11 @@ if (isNaN(userChoice2) == true) {
   alert("non è un numero");
 }
 console.log(userChoice);
-console.log(userChoice2);
 const evenOrOdd = evenChoice(userChoice);
 console.log(evenOrOdd);
+
+console.log(userChoice2);
+
 const generatedNumber = myNumber(1, 5);
 console.log(generatedNumber);
 
@@ -29,5 +31,13 @@ function myNumber(min, max) {
 }
 
 // Sommiamo i due numeri
+const sumNumber = generatedNumber + userChoice2;
+console.log(sumNumber);
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+function sumEvenOrOdd(sum) {
+  const sumEven = sum % 2 === 0;
+  return sumEven;
+}
+const finalResult = sumEvenOrOdd(sumNumber);
+console.log(finalResult);
 // Dichiariamo chi ha vinto.
